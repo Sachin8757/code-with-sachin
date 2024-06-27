@@ -1,0 +1,14 @@
+
+.card-body :hover.card{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+    box-shadow: 0px 0px 10px #e313c2;
+}
+.btn1:hover{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+.btn2:hover{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}

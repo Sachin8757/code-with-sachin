@@ -1,0 +1,42 @@
+.cquestion{
+    width: 100vmax;
+}
+.que-heder{
+    color: rgb(59, 88, 249);
+    font-size: 20px;
+    /* margin-top: 50px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.view{
+font-size: 20px;
+margin-left: 20px;
+margin-top: 18px;
+}
+.c-dsaq{
+    display: flex;
+}
+.dsa-que{
+  color: rgb(20, 70, 79);
+  margin-left: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.que-button{
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left:20px;
+  padding: 8px;
+  font-size: 15px;
+  margin-top: 12px;
+}
+.que-button:hover{
+    color:blue;
+    background-color: rgb(170, 152, 152);
+    transform: scale(1.1);
+    transition-duration:500ms;
+}

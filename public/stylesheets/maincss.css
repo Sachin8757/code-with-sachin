@@ -1,0 +1,336 @@
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+
+
+}
+.nav-list {
+    list-style:none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgb(56, 56, 55);
+    padding:20px;
+    font-size: 18px;
+}
+.nav-list li a:hover{
+    color: #396eeb;
+}
+
+.rightnav{
+    display: flex;
+    align-items:center;
+    justify-content: end;
+    width: 30%;
+    text-align: right;
+    padding:0 23px;
+}
+.line{
+    width: 33px;
+    background-color: rgb(31, 28, 28);
+    height: 4px;
+    margin: 5px 5px;
+}
+.burger:hover{
+    background-color: rgb(90, 80, 80);
+    color: white;
+    transition-duration: .5s;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5px;
+    top: 15px;
+}
+.logo img{
+    width: 300px;
+    height: 80px;
+}
+.background{
+background: rgb(253, 243, 243)url(background.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.auto-input{
+    color:rgb(29, 83, 244);
+}
+.box-main{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color:rgb(48, 46, 66);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 50%;
+    margin:auto;
+    padding-top: 110px;
+}
+
+.fristSection{
+    height: 100vh;
+}
+.secondHalf{
+    width: 50%;
+    display: flex;
+}
+.firstHalf{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content:center;
+    align-items: center;
+
+}
+.btn1{ 
+    background-color: rgb(70, 70, 243);
+    color: wheat;
+    font-size: 17px;
+    border-radius: 5px;
+    padding:15px;
+    margin: 5px;
+    cursor: pointer;
+    width: 130px;
+}
+.btn2{
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid rgb(70, 70, 243);
+    width: 115px;
+    width: 130px;
+}
+.secondHalf img{
+    height:350px;
+    margin-right: none;
+    margin-left: none;
+}
+.text-big{
+    font-size: 50px;
+    margin-left: -250px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text-small{
+    font-size: 20px;
+    margin-left: -250px;
+    padding-top: 10px;
+}
+.box-centernar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-left: -250px;
+    
+}
+#search{
+    margin: 7px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.btn-sm{
+    font-size:15px ;
+    cursor: pointer;
+}
+.dar{
+    border:2px solid black;
+}
+
+/* for .contact */
+.contact{
+    background-color: #fffdfdf7;
+    height: 530px;
+}
+.text-center{
+    text-align: center;
+    padding: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+.from{
+    max-width:1200px;
+    margin: 20px auto;
+
+}
+.from-input{
+    width: 100%;
+    padding: 5px 3px;
+    margin: 10px 0px;
+    font-size:15px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+/* for footer */
+.text-footer{
+    text-align: center;
+    padding: 30px 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #514c4c;
+}
+.foter{
+    margin-top: 40px;
+}
+
+/* for card */
+
+.card img{
+    width: 100%;
+    height: 160px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+
+}
+.heder{
+    font-size: 25px;
+    color: black;
+    line-height: 1rem;
+    margin-bottom: 0.3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 15px;
+}
+.para-text{
+    font-size: 20px;
+    
+}
+.card-buttom{
+    font-weight: bold;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.card{
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+
+    box-shadow: 0px 0px 10px black;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    background-color: rgb(224, 222, 222);
+}
+.card-body{
+    max-width: 975px;
+    margin: 20px auto;
+    display: grid;
+    gap:1.5rem;
+    grid-template-columns: repeat(3,1fr);
+}
+/* why thecoder */
+.why{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 66px;
+}
+.paragraph{
+    font-size:36px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width:529px;
+    color:rgb(31, 28, 28);
+}
+.thecoder{
+    padding: 10px;
+    color: blue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:40px ;
+}
+/* here i start About function */
+.about{
+    width: 100vmax;
+}
+.about-box{
+    display: flex;
+    flex-direction: row;
+}
+.about-img{
+    width: 50%;
+    display: flex;
+}
+.ab-img img{
+    width: 88%;
+    height: 85%;
+    border-radius: 80%;
+}
+.ab-img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.about-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content:center;
+    align-items: center;
+
+}
+#about-text{
+    font-size: 21px;
+    display: flex;
+    margin-left: 270px;
+
+}
+.about-heder{
+text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 65px;
+  padding: 10px;
+  margin-top: -10px;
+  color:rgb(26, 66, 53);
+}
+.about-hed{
+text-align: center;
+  padding: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 35px;
+}
+.about-name1{
+    text-align:30px;
+    margin-top:120px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    margin-left: 290px;
+}
+.about-name2{
+    text-align: center;
+    /* margin-top:120px; */
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 28px;
+    display: flex;
+    margin-left: 290px;
+
+}
