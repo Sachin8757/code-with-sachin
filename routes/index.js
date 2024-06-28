@@ -16,15 +16,6 @@ router.get('/', async function (req, res, next) {
 
 });
 
-router.get('/profile', isLoggedIn, async function (req, res, next) {
-  const user = await userModel.findOne({ username: req.session.passport.user });
-  if(user.password==='Sachin@12345'){
-    res.render('profile2');
-  }else{
-    res.render('profile', { user });
-  }
-  
-});
 
 // here i difine login router
 router.get('/login', async function (req, res, next) {
@@ -90,19 +81,71 @@ router.post("/feedback", async function (req, res, next) {
 router.get('/contact', isLoggedIn, function (req, res) {
   res.render("contact");
 });
-router.post("/contact", async function (req, res, next) {
-  const contact = await contactModel.create({
-    name: req.body.name,
-    phone: req.body.phone,
-    email: req.body.email,
-    msg: req.body.msg
-  })
-  res.redirect('/')
-})
 
 // here a functionto send about page
 router.get('/about', function (req, res) {
   res.render("about");
+});
+
+router.get('/freecourse', isLoggedIn, function (req, res) {
+  res.render("course");
+});
+
+router.get('/paidcourse', isLoggedIn, function (req, res) {
+  res.render("paidcourse");
+});
+
+router.get('/alfa', isLoggedIn, async function (req, res) {
+  const user = await userModel.findOne({ username: req.session.passport.user });
+  if(user.username ==='sachin' && user.password==='Sachin@12345'){
+    res.render("alfa");
+  }else{
+    res.send("First you by course form thecode group")
+  }
+});
+
+router.get('/delta', isLoggedIn, async function (req, res) {
+  const user = await userModel.findOne({ username: req.session.passport.user });
+  if(user.username ==='sachin' && user.password==='Sachin@12345'){
+    res.render("delta");
+  }else{
+    res.send("First you by course form thecode group")
+  }
+ 
+});
+
+router.get('/html', isLoggedIn, function (req, res) {
+  res.render("html");
+  console.log("html page")
+  // res.send("creating");
+});
+router.get('/css', isLoggedIn, function (req, res) {
+  // res.render("delta");
+  res.send("creating");
+});
+router.get('/javascript', isLoggedIn, function (req, res) {
+  // res.render("delta");
+  res.send("creating");
+});
+router.get('/node', isLoggedIn, function (req, res) {
+  // res.render("delta");
+  res.send("creating");
+});
+router.get('/express', isLoggedIn, function (req, res) {
+  // res.render("delta");
+  res.send("creating");
+});
+router.get('/mongo', isLoggedIn, function (req, res) {
+  // res.render("delta");
+  res.send("creating");
+});
+router.get('/sql', isLoggedIn, function (req, res) {
+  // res.render("delta");
+  res.send("creating");
+});
+router.get('/react', isLoggedIn, function (req, res) {
+  // res.render("delta");
+  res.send("react")
 });
 
 
