@@ -97,18 +97,26 @@ router.get('/paidcourse', isLoggedIn, function (req, res) {
 
 router.get('/alfa', isLoggedIn, async function (req, res) {
   const user = await userModel.findOne({ username: req.session.passport.user });
-  if(user.username ==='sachin' && user.password==='Sachin@12345'){
+  if(user.username ==='kalialfa' && user.password==='alfakali'){
     res.render("alfa");
-  }else{
-    res.send("First you by course form thecode group")
+  }
+  else if(user.username=='masterkali' && user.password =='masterkali'){
+    res.render("alfa")
+  }
+  else{
+    res.send("First you by course form thecode group");
   }
 });
 
 router.get('/delta', isLoggedIn, async function (req, res) {
   const user = await userModel.findOne({ username: req.session.passport.user });
-  if(user.username ==='sachin' && user.password==='Sachin@12345'){
+  if(user.username ==='delta1kali' && user.password==='delta1kali'){
     res.render("delta");
-  }else{
+  }
+  else if(user.username=='masterkali' && user.password =='masterkali'){
+    res.render("delta")
+  }
+  else{
     res.send("First you by course form thecode group")
   }
  
